@@ -1,0 +1,21 @@
+//- Layout
+$mobile: 375px;
+$desktop: 1440px;
+
+//- Colors
+//-- Primary
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+//-- Neutral
+$dark-blue: hsl(234, 12%, 34%);
+$grayish-blue: hsl(229, 6%, 66%);
+$light-gray: hsl(0, 0%, 98%);
+
+//- Typography
+$font-size: 1.5rem;
+$font-family: "Poppins";
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 600;

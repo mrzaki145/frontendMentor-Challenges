@@ -1,0 +1,148 @@
+@import 'var';
+
+// -------------------------------
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  color: $dark-blue;
+  background-color: $light-gray;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-size: $font-size;
+  font-weight: $font-weight-normal;
+  font-family: $font-family, sans-serif;
+  line-height: 1.45;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+p {
+  color: $grayish-blue;
+}
+
+.container {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// header
+header {
+  text-align: center;
+  margin-top: 6rem;
+
+  h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .light {
+    font-weight: $font-weight-light;
+  }
+
+  .lead {
+    max-width: 55rem;
+    margin: 0 auto;
+
+    @media screen and (max-width: $mobile) {
+      max-width: unset;
+    }
+  }
+}
+
+// section
+$space: 3rem;
+
+.features-section {
+  margin: 8rem 0;
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .col {
+    flex-basis: 33.333333%;
+
+    &+.col {
+      margin-left: $space;
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    .row {
+      display: block;
+    }
+
+    .col {
+      &+.col {
+        margin-left: 0;
+      }
+
+      &:not(:last-of-type) {
+        margin-bottom: $space;
+      }
+    }
+  }
+}
+
+.feature {
+  padding: $space;
+  border-radius: 4px;
+  background-color: #fff;
+  border-top: 4px solid;
+  box-shadow: 0 3.4px 6.9px -4px rgba(0, 0, 0, 0.06),
+    0 8.2px 16.6px -4px rgba(0, 0, 0, 0.043),
+    0 15.4px 31.2px -4px rgba(0, 0, 0, 0.036),
+    0 27.5px 55.6px -4px rgba(0, 0, 0, 0.03),
+    0 51.4px 104px -4px rgba(0, 0, 0, 0.024),
+    0 123px 249px -4px rgba(0, 0, 0, 0.017);
+
+  &--super {
+    border-color: $cyan;
+  }
+
+  &--team {
+    border-color: $red;
+  }
+
+  &--karma {
+    border-color: $orange;
+  }
+
+  &--calc {
+    border-color: $blue;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: $space;
+  }
+
+  .icon {
+    text-align: right;
+  }
+
+  &+.feature {
+    margin-top: $space;
+  }
+}

@@ -49,7 +49,7 @@ img {
 }
 
 .logo {
-  margin-bottom: 16rem;
+  margin-bottom: 14rem;
 
   @media screen and (max-width: $mobile) {
     background-color: #fff;
@@ -81,7 +81,7 @@ img {
 
 .col {
   &--text {
-    padding: 6rem 16rem 1rem;
+    padding: 6rem 14rem 6rem;
     flex: 0 0 60%;
     background-image: linear-gradient(135deg,
         hsl(0, 0%, 100%),
@@ -100,7 +100,7 @@ img {
     h1 {
       color: $dark-grayish-red;
       line-height: 1.1;
-      font-size: 6rem;
+      font-size: 5.5rem;
       font-family: inherit;
       font-weight: $font-weight-bold;
       letter-spacing: 15px;
@@ -151,7 +151,7 @@ img {
     position: relative;
     z-index: 10;
     font-family: inherit;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;

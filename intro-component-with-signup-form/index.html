@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mostafa Reda" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.min.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col col_text">
+            <!-- col_text -->
+            <h1>Learn to code by watching others</h1>
+            <p class="lead">
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+            </p>
+          </div>
+          <div class="col col_form">
+            <!-- col_form -->
+            <a href="#" class="btn btn--cta"
+              ><strong>Try it free 7 days </strong
+              ><small>then $20/mo. thereafter</small></a
+            >
+            <form class="form">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="first-name"
+                  class="input"
+                  placeholder="First Name"
+                  required
+                />
+                <span class="err-msg">First Name cannot be empty</span>
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="last-name"
+                  class="input"
+                  placeholder="Last Name"
+                  required
+                />
+                <span class="err-msg">Last Name cannot be empty</span>
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="input"
+                  placeholder="Email Address"
+                  required
+                />
+                <span class="err-msg">Email Address cannot be empty</span>
+              </div>
+
+              <div class="input-group">
+                <input
+                  type="password"
+                  name="password"
+                  class="input"
+                  placeholder="Password"
+                  required
+                />
+                <span class="err-msg">Password cannot be empty</span>
+              </div>
+
+              <button type="submit" class="btn btn--submit">
+                Claim your free trial
+              </button>
+              <p class="msg">
+                By clicking the button you are agreeing to our
+                <strong><a href="#">Terms and Services</a></strong>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

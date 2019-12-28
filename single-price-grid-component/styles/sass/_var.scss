@@ -1,0 +1,24 @@
+//- Layout
+$mobile: 375px;
+$disktop: 1440px;
+
+//= Colors
+//-- Primary
+$cyan: hsl(179, 62%, 43%);
+$light-cyan: rgb(75, 190, 188);
+$bright-yellow: hsl(71, 73%, 54%);
+//-- Neutral
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+
+//- Typography
+$font-size: 1.6rem;
+$font-family: ('Karla', sans-serif);
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+//= Border radius
+$radius: 8px;
+
+//- Box shadow
+$box-shadow: (0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.025), 0 22.3px 17.9px rgba(0, 0, 0, 0.03), 0 41.8px 33.4px rgba(0, 0, 0, 0.036), 0 100px 80px rgba(0, 0, 0, 0.05));

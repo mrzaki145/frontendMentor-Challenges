@@ -107,12 +107,9 @@ $space: 3rem;
   border-radius: 4px;
   background-color: #fff;
   border-top: 4px solid;
-  box-shadow: 0 3.4px 6.9px -4px rgba(0, 0, 0, 0.06),
-    0 8.2px 16.6px -4px rgba(0, 0, 0, 0.043),
-    0 15.4px 31.2px -4px rgba(0, 0, 0, 0.036),
-    0 27.5px 55.6px -4px rgba(0, 0, 0, 0.03),
-    0 51.4px 104px -4px rgba(0, 0, 0, 0.024),
-    0 123px 249px -4px rgba(0, 0, 0, 0.017);
+  -webkit-box-shadow: 0px 15px 20px -5px rgba(5,71,239,0.4);
+  -moz-box-shadow: 0px 15px 20px -5px rgba(5,71,239,0.4);
+  box-shadow: 0px 15px 20px -5px rgba(5,71,239,0.4);
 
   &--super {
     border-color: $cyan;

@@ -1,0 +1,22 @@
+//- Layout
+$mobile: 375px;
+$disktop: 1440px;
+
+//- Colors
+//-- Primary
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+//-- Accent
+$bright-blue: hsl(224, 93%, 58%);
+$boderate-cyan: hsl(170, 45%, 43%);
+//-- Neutral
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+
+//- Typography
+$font-size: 1.6rem;
+$font-family-primary: ("Raleway", sans-serif);
+$font-weight-primary-normal: 400;
+$font-weight-primary-bold: 600;
+$font-family-secondary: ("Open Sans", sans-serif);
+$font-weight-secondary-normal: 400;

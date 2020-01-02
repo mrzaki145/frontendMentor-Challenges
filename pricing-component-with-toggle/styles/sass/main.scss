@@ -30,7 +30,7 @@ body {
   font-weight: $font-weight-normal;
   color: $dark-grayish-blue;
   background-color: $very-light-grayish-blue;
-  background-image: url("../../images/bg-top.svg"), url("./../../images/bg-bottom.svg");
+  background-image: url("./../images/bg-top.svg"), url("./../images/bg-bottom.svg");
   background-repeat: no-repeat;
   background-position: right top, left bottom;
   background-size: 25%;

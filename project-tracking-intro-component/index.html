@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Mostafa Reda" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Project tracking intro component</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Barlow|Barlow+Condensed:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.min.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <nav>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+          <ul class="links">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li class="bullet"></li>
+            <li><a href="#" class="login">Login</a></li>
+          </ul>
+        </nav>
+
+        <section>
+          <h4>
+            <span class="new">New</span>
+            Monograph Dashboard
+          </h4>
+          <h1>Powerful insights into your team</h1>
+          <p class="lead">Project planning and time tracking for agile teams</p>
+          <div class="btn-wrapper">
+            <a href="#" class="btn">Schedule a demo</a>
+            <p>to see a preview</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      let isOpend = false;
+
+      hamburger.addEventListener("click", function() {
+        const menu = document.querySelector(".links");
+
+        isOpend = !isOpend;
+
+        if (isOpend) {
+          hamburger.classList.add("is-active");
+          menu.style.display = "block";
+        } else {
+          hamburger.classList.remove("is-active");
+          menu.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

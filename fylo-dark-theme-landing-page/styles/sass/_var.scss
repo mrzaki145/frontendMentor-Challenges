@@ -1,0 +1,29 @@
+//- Layout
+$mobile: 375px;
+$desktop: 1440px;
+
+//- Colors
+//-- Primary
+// intro and email sign up background
+$dark-blue-1: hsl(217, 28%, 15%);
+// main background
+$dark-blue-2: hsl(218, 28%, 13%);
+// footer background
+$dark-blue-3: hsl(216, 53%, 9%);
+// testimonials background
+$dark-blue-4: hsl(219, 30%, 18%);
+//-- Accent
+// inside call-to-action gradient
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+//-- Neutral
+$white: hsl(0, 0%, 100%);
+
+//- Typography
+$font-size: 1.4rem;
+$font-family-primary: ("Raleway", sans-serif);
+$font-weight-p-normal: 400;
+$font-weight-p-bold: 700;
+$font-family-secondary: ("Open Sans", sans-serif);
+$font-weight-s-normal: 400;
+$font-weight-s-bold: 700;

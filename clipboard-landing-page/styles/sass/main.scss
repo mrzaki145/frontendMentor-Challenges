@@ -240,10 +240,18 @@ p {
     .section__clients {
       .row {
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
 
         .col {
           text-align: center;
           flex: 1;
+
+          @media screen and (max-width: 768px) {
+            flex: unset;
+            flex-basis: 25%;
+            margin: 2rem;
+          }
 
           @media screen and (max-width: $mobile) {
             &:not(:last-of-type) {

@@ -1,0 +1,436 @@
+@import "var";
+
+// ---------------------------------
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.65;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+
+  @media screen and (max-width: $mobile) {
+    font-size: 55%;
+  }
+}
+
+body {
+  font-size: $font-size;
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-s-normal;
+  color: $very-dark-cyan;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (max-width: $mobile) {
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.row {
+  display: flex;
+
+  @media screen and (max-width: $mobile) {
+    display: block;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.15;
+  font-weight: $font-weight-p-bold;
+  font-family: $font-family-primary;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  border-radius: 120rem;
+  font-weight: $font-weight-s-semi-bold;
+
+  &--primary {
+    padding: 1.5rem 6rem;
+    color: #fff;
+    background-color: $pink;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &--secondary {
+    font-size: 1.4rem;
+    color: $pink;
+    background-color: #fff;
+    border: 1px solid $pink;
+    padding: 0.5rem 3rem;
+  }
+
+  &:hover {
+    opacity: 0.65;
+  }
+}
+
+.img-wide {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// --------------------------> Nav <-------------------------- \\
+
+.nav {
+  padding-top: 6rem;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: auto;
+    height: 3rem;
+  }
+}
+
+// --------------------------> Header <-------------------------- \\
+
+.header {
+  padding-bottom: 10rem;
+
+  .hero {
+    padding: 10rem 4rem;
+    text-align: center;
+    max-width: 85rem;
+    margin-right: auto;
+    margin-left: auto;
+
+    .text,
+    .img-wrapper {
+      margin-bottom: 8rem;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+
+    .lead {
+      font-size: 1.7rem;
+      opacity: 0.85;
+      max-width: 50rem;
+      margin: 0 auto 4rem;
+    }
+
+    .statics {
+      .col {
+        flex: 1;
+
+        @media screen and (max-width: $mobile) {
+          &:not(:last-of-type) {
+            margin-bottom: 6rem;
+          }
+        }
+      }
+
+      .content {
+        text-align: left;
+        width: max-content;
+        margin: 0 auto;
+      }
+
+      .icon {
+        width: 3rem;
+        height: auto;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .number {
+        font-size: 7rem;
+        line-height: 1.4;
+      }
+
+      p {
+        text-align: center;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+// --------------------------> Sections <-------------------------- \\
+
+.section {
+  padding: 8rem 0;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  .col {
+    flex-basis: 45%;
+
+    @media screen and (max-width: $mobile) {
+      flex: 1;
+    }
+
+    &--text {
+      @media screen and (max-width: $mobile) {
+        order: 1;
+        text-align: center;
+      }
+
+      h3 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        opacity: 0.75;
+      }
+    }
+
+    @media screen and (max-width: $mobile) {
+      &--img {
+        margin: 0 3rem 6rem;
+      }
+    }
+  }
+
+  &--grow,
+  &--users {
+    position: relative;
+    padding: 5rem 0;
+    background-color: $very-pale-blue;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 15rem;
+      z-index: 10;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &::before {
+      bottom: 100%;
+    }
+
+    &::after {
+      top: 100%;
+    }
+  }
+
+  &--flowing {
+    margin: 25rem 0;
+    padding: 0;
+  }
+
+  &--grow {
+    &::before {
+      background-image: url("./../images/bg-section-top-desktop-1.svg");
+    }
+
+    &::after {
+      background-image: url("./../images/bg-section-bottom-desktop-1.svg");
+    }
+
+    @media screen and (max-width: $mobile) {
+      &::before {
+        background-image: url("./../images/bg-section-top-mobile-1.svg");
+      }
+
+      &::after {
+        background-image: url("./../images/bg-section-bottom-mobile-1.svg");
+      }
+    }
+  }
+
+  &--users {
+    &::before {
+      background-image: url("../../images/bg-section-top-desktop-2.svg");
+    }
+
+    &::after {
+      background-image: url("../../images/bg-section-bottom-desktop-2.svg");
+    }
+
+    @media screen and (max-width: $mobile) {
+      &::before {
+        background-image: url("../../images/bg-section-top-mobile-2.svg");
+      }
+
+      &::after {
+        background-image: url("../../images/bg-section-bottom-mobile-2.svg");
+      }
+    }
+  }
+
+  &--cta {
+    text-align: center;
+    padding: 30rem 0;
+
+    h2 {
+      font-size: 3.5rem;
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+// ---------------------------> Footer <-------------------------- \\
+
+.footer {
+  position: relative;
+  padding: 10rem 0 10rem;
+  color: #fff;
+  background-color: $very-dark-cyan;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 15rem;
+    background-image: url("./../../images/bg-footer-top-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media screen and (max-width: $mobile) {
+      height: 7rem;
+      background-image: url("./../../images/bg-footer-top-mobile.svg");
+    }
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  p {
+    opacity: 0.75;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  .logo {
+    margin-bottom: 2rem;
+  }
+
+  &-nav {
+    margin-right: 4rem;
+
+    @media screen and (max-width: $mobile) {
+      order: 1;
+      margin-right: 0;
+    }
+  }
+
+  .info {
+    max-width: 45rem;
+    margin-bottom: 6rem;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .icon {
+      opacity: 0.75;
+      margin-right: 2rem;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    opacity: 0.75;
+    align-items: center;
+
+    li:not(:last-of-type) {
+      margin-right: 2rem;
+    }
+  }
+
+  .form {
+    max-width: 40rem;
+
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 6rem;
+    }
+
+    h3 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 2rem 0;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+
+      input,
+      button {
+        display: inline-block;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 4px;
+      }
+
+      input {
+        flex: 1;
+        margin-right: 2rem;
+      }
+
+      button {
+        color: #fff;
+        background-color: $pink;
+      }
+    }
+  }
+}

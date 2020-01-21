@@ -1,0 +1,21 @@
+//-> Layout
+$mobile: 425px;
+$tablet: 768px;
+$desktop: 1440px;
+
+//-> Colors
+///-> Primary
+$soft-blue: hsl(231, 69%, 60%);
+$soft-red: hsl(0, 94%, 66%);
+///-> Secondary
+$red: hsl(0, 87%, 67%);
+///-> Neutral
+$grayish-blue: hsl(229, 8%, 60%);
+$very-dark-blue: hsl(229, 31%, 21%);
+
+//-> Typography
+$font-size: 1.6rem;
+$font-family: ("Rubik", sans-serif);
+$font-weight-normal: 400;
+$font-weight-md: 500;
+$font-weight-bold: 600;

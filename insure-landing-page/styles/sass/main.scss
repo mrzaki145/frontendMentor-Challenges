@@ -59,6 +59,10 @@ body {
   margin-right: auto;
   margin-left: auto;
 
+  @media screen and (max-width: $tablet) {
+    max-width: 90%;
+  }
+
   @media screen and (max-width: $mobile) {
     max-width: 100%;
     padding-left: 2rem;
@@ -153,7 +157,6 @@ a {
     }
 
     &--white {
-      // opacity: 0.8;
       color: #fff;
       border-color: #fff;
 
@@ -431,7 +434,7 @@ a {
       width: 30%;
     }
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 640px) {
       // width: auto;
       top: 100%;
       transform: translateY(-50%);
@@ -450,7 +453,13 @@ a {
       bottom: -80%;
     }
 
+    @media screen and (max-width: 640px) {
+      bottom: unset;
+      top: 0;
+    }
+
     @media screen and (max-width: $mobile) {
+      top: unset;
       bottom: 375px;
       transform: translateY(0);
       content: url("./../images/bg-pattern-intro-left-mobile.svg");
@@ -461,7 +470,7 @@ a {
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 640px) {
       flex-direction: column;
     }
   }
@@ -481,13 +490,18 @@ a {
       margin: 0;
     }
 
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 640px) {
       max-width: 100%;
 
       &--text {
         order: 1;
         padding: 0 3rem;
         text-align: center;
+      }
+
+      .hr {
+        margin-right: auto;
+        margin-left: auto;
       }
 
       &--img {
@@ -536,6 +550,12 @@ a {
       margin-right: 4rem;
     }
 
+    @media screen and (max-width: 640px) {
+      &:not(:last-of-type) {
+        margin-right: 2rem;
+      }
+    }
+
     @media screen and (max-width: $mobile) {
       &:not(:last-of-type) {
         margin-right: 0;
@@ -564,6 +584,10 @@ a {
   background-position: right top;
   background-repeat: no-repeat;
   background-size: auto 100%;
+
+  @media screen and (max-width: 640px) {
+    padding: 6rem 4rem;
+  }
 
   @media screen and (max-width: $mobile) {
     padding: 6rem 3rem;

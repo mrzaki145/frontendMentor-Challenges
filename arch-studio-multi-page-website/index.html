@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mostafa Reda" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Frontend Mentor | Arch Studios</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+  </head>
+
+  <body>
+    <span class="pageTitle">Home</span>
+
+    <nav class="nav">
+      <div class="wrapper nav__wrapper">
+        <a href="#"
+          ><img src="./assets/images/logo.svg" alt="logo" class="nav__logo"
+        /></a>
+
+        <ul class="nav__list">
+          <li>
+            <a href="./portfolio/" class="nav__link">portfolio</a>
+          </li>
+          <li>
+            <a href="./about/" class="nav__link">about Us</a>
+          </li>
+          <li>
+            <a href="./contact/" class="nav__link">contact</a>
+          </li>
+        </ul>
+
+        <button role="button" class="nav__btn">
+          <img
+            class="icn icn-hamburger"
+            src="./assets/images/icons/icon-hamburger.svg"
+            alt=""
+          />
+          <img
+            class="icn icn-close"
+            src="./assets/images/icons/icon-close.svg"
+            alt=""
+          />
+        </button>
+      </div>
+    </nav>
+    <!-- </nav> -->
+
+    <header class="header">
+      <div class="wrapper header__wrapper flow flow--lg">
+        <h1>Project Paramour</h1>
+        <p>
+          Project made for an art museum near Southwest London. Project Paramour
+          is a statement of bold, modern architecture.
+        </p>
+        <a href="./portfolio/" class="btn">
+          <span class="text">See Our Portfolio</span>
+          <span class="icn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+              <g
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#EEEFF4"
+                stroke-width="2"
+              >
+                <path d="M15 1l9 9-9 9M0 10h24" />
+              </g>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </header>
+    <!-- </header> -->
+
+    <main>
+      <section class="section-welcome">
+        <div class="wrapper section-welcome__wrapper">
+          <h4>Welcome</h4>
+          <hr />
+
+          <div class="section-welcome__content flow">
+            <h2>
+              Welcome to <br />
+              Arch Studio
+            </h2>
+            <p>
+              We have a unique network and skillset to help bring your projects
+              to life. Our small team of highly skilled individuals combined
+              with our large network put us in a strong position to deliver
+              exceptional results.
+            </p>
+            <p>
+              Over the past 10 years, we have worked on all kinds of projects.
+              From stations to high-rise buildings, we create spaces that
+              inspire and delight.
+            </p>
+            <p>
+              Over the past 10 years, we have worked on all kinds of projects.
+              From stations to high-rise buildings, we create spaces that
+              inspire and delight.
+            </p>
+            <p>
+              We work closely with our clients so that we understand the
+              intricacies of each project. This allows us to work in harmony the
+              surrounding area to create truly stunning projects that will stand
+              the test of time.
+            </p>
+          </div>
+
+          <img src="./assets/images/home/desktop/image-welcome.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <div class="wrapper section-cta__wrapper flow flow--lg">
+          <h2>
+            Small team,
+            <br />
+            big ideas
+          </h2>
+          <a href="./about/" class="btn">
+            <span class="text">About Us</span>
+            <span class="icn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke="#EEEFF4"
+                  stroke-width="2"
+                >
+                  <path d="M15 1l9 9-9 9M0 10h24" />
+                </g>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section-portfolio">
+        <div class="wrapper section-portfolio__wrapper">
+          <header class="section-portfolio__header">
+            <h2>Featured</h2>
+            <a href="./portfolio/" class="btn">
+              <span class="text">See all</span>
+              <span class="icn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                  <g
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#EEEFF4"
+                    stroke-width="2"
+                  >
+                    <path d="M15 1l9 9-9 9M0 10h24" />
+                  </g>
+                </svg>
+              </span>
+            </a>
+          </header>
+
+          <ul class="projects">
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./assets/images/portfolio/mobile/image-del-sol.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./assets/images/portfolio/tablet/image-del-sol.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="./assets/images/portfolio/desktop/image-del-sol.jpg"
+                />
+
+                <img
+                  src="./assets/images/portfolio/mobile/image-del-sol.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./portfolio/">
+                <h3>Project Del Sol</h3>
+                <span>View All Projects</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./assets/images/portfolio/mobile/image-228b.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./assets/images/portfolio/tablet/image-228b.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="./assets/images/portfolio/desktop/image-228b.jpg"
+                />
+
+                <img
+                  src="./assets/images/portfolio/mobile/image-228b.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./portfolio/">
+                <h3>228B Tower</h3>
+                <span>View All Projects</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./assets/images/portfolio/mobile/image-prototype.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./assets/images/portfolio/tablet/image-prototype.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="./assets/images/portfolio/desktop/image-prototype.jpg"
+                />
+
+                <img
+                  src="./assets/images/portfolio/mobile/image-prototype.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./portfolio/">
+                <h3>Le Prototype</h3>
+                <span>View All Projects</span>
+              </a>
+            </li>
+          </ul>
+
+          <a href="./portfolio/" class="btn">
+            <span class="text">See all</span>
+            <span class="icn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke="#EEEFF4"
+                  stroke-width="2"
+                >
+                  <path d="M15 1l9 9-9 9M0 10h24" />
+                </g>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- </main> -->
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <nav class="footer__nav">
+          <a href="#" class="footer__logo">
+            <img src="./assets/images/logo-white.svg" alt="" />
+          </a>
+
+          <ul class="nav__list">
+            <li>
+              <a href="./portfolio/" class="nav__link">portfolio</a>
+            </li>
+            <li>
+              <a href="./about/" class="nav__link">about Us</a>
+            </li>
+            <li>
+              <a href="./contact/" class="nav__link">contact</a>
+            </li>
+          </ul>
+
+          <a href="./portfolio/" class="btn">
+            <span class="text">See Our Portfolio</span>
+            <span class="icn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke="#EEEFF4"
+                  stroke-width="2"
+                >
+                  <path d="M15 1l9 9-9 9M0 10h24" />
+                </g>
+              </svg>
+            </span>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./assets/scripts/app.js"></script>
+  </body>
+</html>

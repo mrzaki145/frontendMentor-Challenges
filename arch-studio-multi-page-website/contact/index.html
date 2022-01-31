@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mostafa Reda" />
+
+    <link
+      rel="shortcut icon"
+      href="./../assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Frontend Mentor | Arch Studios</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./../assets/styles/styles.css" />
+  </head>
+
+  <body>
+    <span class="pageTitle">contact</span>
+
+    <nav class="nav">
+      <div class="wrapper nav__wrapper">
+        <a href="./../"
+          ><img src="./../assets/images/logo.svg" alt="logo" class="nav__logo"
+        /></a>
+
+        <ul class="nav__list">
+          <li>
+            <a href="./../portfolio/" class="nav__link">portfolio</a>
+          </li>
+          <li>
+            <a href="./../about/" class="nav__link">about Us</a>
+          </li>
+          <li>
+            <a href="./../contact/" class="nav__link">contact</a>
+          </li>
+        </ul>
+
+        <button role="button" class="nav__btn">
+          <img
+            class="icn icn-hamburger"
+            src="./../assets/images/icons/icon-hamburger.svg"
+            alt=""
+          />
+          <img
+            class="icn icn-close"
+            src="./../assets/images/icons/icon-close.svg"
+            alt=""
+          />
+        </button>
+      </div>
+    </nav>
+    <!-- </nav> -->
+
+    <header class="inner-page-header">
+      <div class="wrapper inner-page-header__wrapper">
+        <picture>
+          <source
+            media="(max-width: 549px)"
+            srcset="./../assets/images/contact/mobile/image-hero.jpg"
+          />
+          <source
+            media="(min-width: 550px) and (max-width: 989px)"
+            srcset="./../assets/images/contact/tablet/image-hero.jpg"
+          />
+          <source
+            media="(min-width: 990px)"
+            srcset="./../assets/images/contact/desktop/image-hero.jpg"
+          />
+
+          <img src="./../assets/images/contact/mobile/image-hero.jpg" alt="" />
+        </picture>
+
+        <div class="inner-page-header__content flow">
+          <h4>Contact</h4>
+          <h1>
+            Tell us about <br />
+            your project
+          </h1>
+          <p>
+            We'd love to hear more about your project. Please, leave a message
+            below or give us a call. We have two offices, one in Texas and one
+            in Tennessee. If you find yourself nearby, come say hello!
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- </header> -->
+
+    <main>
+      <section class="section-info">
+        <div class="wrapper section-info__wrapper grid-1-2">
+          <h2>
+            Contact <br />
+            Details
+          </h2>
+
+          <div class="section-info__content">
+            <div class="flow">
+              <h3>Main Office</h3>
+
+              <div class="info">
+                <p><span>Mail:</span><span>archone@mail.com</span></p>
+                <p><span>Address:</span><span>1892 Chenoweth Drive TN</span></p>
+                <p><span>Phone:</span><span>123-456-3451</span></p>
+              </div>
+
+              <a href="./../portfolio/" class="btn btn--tertiary">
+                <span class="text">View on Map</span>
+                <span class="icn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#1B1D23"
+                      stroke-width="2"
+                    >
+                      <path d="M15 1l9 9-9 9M0 10h24" />
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
+            <div class="flow">
+              <h3>Office II</h3>
+
+              <div class="info">
+                <p><span>Mail:</span><span>archtwo@mail.com</span></p>
+                <p><span>Address:</span><span>3399 Wines Lane TX</span></p>
+                <p><span>Phone:</span><span>832-123-4321</span></p>
+              </div>
+
+              <a href="./../portfolio/" class="btn btn--tertiary">
+                <span class="text">View on Map</span>
+                <span class="icn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="26"
+                    height="20"
+                  >
+                    <g
+                      fill="none"
+                      fill-rule="evenodd"
+                      stroke="#1B1D23"
+                      stroke-width="2"
+                    >
+                      <path d="M15 1l9 9-9 9M0 10h24" />
+                    </g>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-map">
+        <div class="wrapper">
+          <picture>
+            <source
+              media="(max-width: 549px)"
+              srcset="./../assets/images/contact/mobile/image-map.png"
+            />
+            <source
+              media="(min-width: 550px) and (max-width: 989px)"
+              srcset="./../assets/images/contact/tablet/image-map.png"
+            />
+            <source
+              media="(min-width: 990px)"
+              srcset="./../assets/images/contact/desktop/image-map.png"
+            />
+            <img src="./../assets/images/contact/mobile/image-map.png" alt="" />
+          </picture>
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div class="wrapper section-contact__wrapper grid-1-2">
+          <h2>
+            Connect <br />
+            with us
+          </h2>
+
+          <form class="form flow">
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Name"
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="name"
+              placeholder="Email"
+            />
+            <textarea
+              class="form__input"
+              name="message"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
+
+            <button class="btn form__btn" role="button">
+              <span class="icn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                  <g
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#EEEFF4"
+                    stroke-width="2"
+                  >
+                    <path d="M15 1l9 9-9 9M0 10h24" />
+                  </g>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <nav class="footer__nav">
+          <a href="./../" class="footer__logo">
+            <img src="./../assets/images/logo-white.svg" alt="" />
+          </a>
+
+          <ul class="nav__list">
+            <li>
+              <a href="./../portfolio/" class="nav__link">portfolio</a>
+            </li>
+            <li>
+              <a href="./../about/" class="nav__link">about Us</a>
+            </li>
+            <li>
+              <a href="./../contact/" class="nav__link">contact</a>
+            </li>
+          </ul>
+
+          <a href="./../portfolio/" class="btn">
+            <span class="text">See Our Portfolio</span>
+            <span class="icn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke="#EEEFF4"
+                  stroke-width="2"
+                >
+                  <path d="M15 1l9 9-9 9M0 10h24" />
+                </g>
+              </svg>
+            </span>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./../assets/scripts/app.js"></script>
+  </body>
+</html>

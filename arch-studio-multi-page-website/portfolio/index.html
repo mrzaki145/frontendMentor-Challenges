@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mostafa Reda" />
+
+    <link
+      rel="shortcut icon"
+      href="./../assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Frontend Mentor | Arch Studios</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./../assets/styles/styles.css" />
+  </head>
+
+  <body>
+    <span class="pageTitle">Portfolio</span>
+
+    <nav class="nav">
+      <div class="wrapper nav__wrapper">
+        <a href="./../"
+          ><img src="./../assets/images/logo.svg" alt="logo" class="nav__logo"
+        /></a>
+
+        <ul class="nav__list">
+          <li>
+            <a href="#" class="nav__link">portfolio</a>
+          </li>
+          <li>
+            <a href="./../about/" class="nav__link">about Us</a>
+          </li>
+          <li>
+            <a href="./../contact/" class="nav__link">contact</a>
+          </li>
+        </ul>
+
+        <button role="button" class="nav__btn">
+          <img
+            class="icn icn-hamburger"
+            src="./../assets/images/icons/icon-hamburger.svg"
+            alt=""
+          />
+          <img
+            class="icn icn-close"
+            src="./../assets/images/icons/icon-close.svg"
+            alt=""
+          />
+        </button>
+      </div>
+    </nav>
+    <!-- </nav> -->
+
+    <main>
+      <section class="section-portfolio">
+        <div class="wrapper section-portfolio__wrapper">
+          <ul class="projects">
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./../assets/images/portfolio/mobile/image-seraph.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./../assets/images/portfolio/tablet/image-seraph.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="./../assets/images/portfolio/desktop/image-seraph.jpg"
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-seraph.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>Seraph Station</h3>
+                <span>September 2019</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./../assets/images/portfolio/mobile/image-eebox.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./../assets/images/portfolio/tablet/image-eebox.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="./../assets/images/portfolio/desktop/image-eebox.jpg"
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mboile/image-eebox.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>Eebox Building</h3>
+                <span>August 2017</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./../assets/images/portfolio/mobile/image-federal.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./../assets/images/portfolio/tablet/image-federal.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="
+                    ./../assets/images/portfolio/desktop/image-federal.jpg
+                  "
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-federal.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>Federal II Tower</h3>
+                <span>March 2017</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./../assets/images/portfolio/mobile/image-del-sol.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./../assets/images/portfolio/tablet/image-del-sol.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="
+                    ./../assets/images/portfolio/desktop/image-del-sol.jpg
+                  "
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-del-sol.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>Project Del Sol</h3>
+                <span>January 2016</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="
+                    ./../assets/images/portfolio/mobile/image-prototype.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="
+                    ./../assets/images/portfolio/tablet/image-prototype.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="
+                    ./../assets/images/portfolio/desktop/image-prototype.jpg
+                  "
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-prototype.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>Le Prototype</h3>
+                <span>October 2015</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./../assets/images/portfolio/mobile/image-228b.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./../assets/images/portfolio/tablet/image-228b.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="./../assets/images/portfolio/desktop/image-228b.jpg"
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-228b.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>228B Tower</h3>
+                <span>April 2015</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="
+                    ./../assets/images/portfolio/mobile/image-edelweiss.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="
+                    ./../assets/images/portfolio/tablet/image-edelweiss.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="
+                    ./../assets/images/portfolio/desktop/image-edelweiss.jpg
+                  "
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-edelweiss.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>Grand Edelweiss Hotel</h3>
+                <span>December 2013</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./../assets/images/portfolio/mobile/image-netcry.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./../assets/images/portfolio/tablet/image-netcry.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="./../assets/images/portfolio/desktop/image-netcry.jpg"
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-netcry.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>Netcry Tower</h3>
+                <span>August 2012</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./../assets/images/portfolio/mobile/image-hypers.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./../assets/images/portfolio/tablet/image-hypers.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="./../assets/images/portfolio/desktop/image-hypers.jpg"
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-hypers.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>Hypers</h3>
+                <span>January 2012</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./../assets/images/portfolio/mobile/image-sxiv.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./../assets/images/portfolio/tablet/image-sxiv.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="./../assets/images/portfolio/desktop/image-sxiv.jpg"
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-sxiv.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>SXIV Tower</h3>
+                <span>March 2011</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="./../assets/images/portfolio/mobile/image-trinity.jpg"
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="./../assets/images/portfolio/tablet/image-trinity.jpg"
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="
+                    ./../assets/images/portfolio/desktop/image-trinity.jpg
+                  "
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-trinity.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>Trinity Bank Tower</h3>
+                <span>September 2010</span>
+              </a>
+            </li>
+            <li class="project">
+              <picture>
+                <source
+                  media="(max-width: 549px)"
+                  srcset="
+                    ./../assets/images/portfolio/mobile/image-paramour.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 550px) and (max-width: 989px)"
+                  srcset="
+                    ./../assets/images/portfolio/tablet/image-paramour.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 990px)"
+                  srcset="
+                    ./../assets/images/portfolio/desktop/image-paramour.jpg
+                  "
+                />
+
+                <img
+                  src="./../assets/images/portfolio/mobile/image-paramour.jpg"
+                  alt=""
+                />
+              </picture>
+              <a href="./">
+                <h3>Project Paramour</h3>
+                <span>February 2008</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- </main> -->
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <nav class="footer__nav">
+          <a href="./../" class="footer__logo">
+            <img src="./../assets/images/logo-white.svg" alt="" />
+          </a>
+
+          <ul class="nav__list">
+            <li>
+              <a href="#" class="nav__link">portfolio</a>
+            </li>
+            <li>
+              <a href="./../about/" class="nav__link">about Us</a>
+            </li>
+            <li>
+              <a href="./../contact/" class="nav__link">contact</a>
+            </li>
+          </ul>
+
+          <a href="/portfolio/" class="btn">
+            <span class="text">See Our Portfolio</span>
+            <span class="icn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke="#EEEFF4"
+                  stroke-width="2"
+                >
+                  <path d="M15 1l9 9-9 9M0 10h24" />
+                </g>
+              </svg>
+            </span>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./../assets/scripts/app.js"></script>
+  </body>
+</html>

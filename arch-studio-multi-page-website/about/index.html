@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mostafa Reda" />
+
+    <link
+      rel="shortcut icon"
+      href="./../assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Frontend Mentor | Arch Studios</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./../assets/styles/styles.css" />
+  </head>
+
+  <body>
+    <span class="pageTitle">about Us</span>
+
+    <nav class="nav">
+      <div class="wrapper nav__wrapper">
+        <a href="./../"
+          ><img src="./../assets/images/logo.svg" alt="logo" class="nav__logo"
+        /></a>
+
+        <ul class="nav__list">
+          <li>
+            <a href="./../portfolio/" class="nav__link">portfolio</a>
+          </li>
+          <li>
+            <a href="./../about/" class="nav__link">about Us</a>
+          </li>
+          <li>
+            <a href="./../contact/" class="nav__link">contact</a>
+          </li>
+        </ul>
+
+        <button role="button" class="nav__btn">
+          <img
+            class="icn icn-hamburger"
+            src="./../assets/images/icons/icon-hamburger.svg"
+            alt=""
+          />
+          <img
+            class="icn icn-close"
+            src="./../assets/images/icons/icon-close.svg"
+            alt=""
+          />
+        </button>
+      </div>
+    </nav>
+    <!-- </nav> -->
+
+    <header class="inner-page-header">
+      <div class="wrapper inner-page-header__wrapper">
+        <picture>
+          <source
+            media="(max-width: 549px)"
+            srcset="./../assets/images/about/mobile/image-hero.jpg"
+          />
+          <source
+            media="(min-width: 550px) and (max-width: 1099px)"
+            srcset="./../assets/images/about/tablet/image-hero.jpg"
+          />
+          <source
+            media="(min-width: 1100px)"
+            srcset="./../assets/images/about/desktop/image-hero.jpg"
+          />
+
+          <img src="./../assets/images/about/mobile/image-hero.jpg" alt="" />
+        </picture>
+
+        <div class="inner-page-header__content flow">
+          <h4>About</h4>
+          <h1>
+            Your team of <br />
+            professionals
+          </h1>
+          <p>
+            Our small team of world-class professionals will work with you every
+            step of the way. Strong relationships are at the core of everything
+            we do. This extends to the relationship our projects have with their
+            surroundings.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- </header> -->
+
+    <main>
+      <section class="section-heritage">
+        <div class="wrapper section-heritage__wrapper">
+          <div class="section-heritage__content flow flow--lg">
+            <hr class="line" />
+            <h2>
+              Our <br />
+              Heritage
+            </h2>
+            <p>
+              Founded in 2007, we started as a trio of architects. Our
+              complimentary skills and relentless attention to detail turned
+              Arch into one of the most sought after boutique firms in the
+              country.
+            </p>
+            <p>
+              Speciliazing in Urban Design allowed us to focus on creating
+              exceptional structures that live in harmony with their
+              surroundings. We consider every detail from every surrounding
+              element to inform our designs.
+            </p>
+            <p>
+              Our small team of world-class professionals provides input on
+              every project.
+            </p>
+          </div>
+
+          <img
+            src="./../assets/images/about/desktop/image-heritage.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="section-team">
+        <div class="wrapper section-team__wrapper grid-1-2">
+          <h2>
+            The <br />
+            Leaders
+          </h2>
+
+          <div class="team">
+            <div class="team-member">
+              <img
+                src="./../assets/images/about/desktop/avatar-jake.jpg"
+                alt=""
+                class="team-member__avatar"
+              />
+              <div>
+                <div>
+                  <h3 class="team-member__name">Jake Richards</h3>
+                  <p class="team-member__role">Chief Architect</p>
+                </div>
+                <div class="icons">
+                  <span class="icon">
+                    <img
+                      src="./../assets/images/icons/icon-linkedin.svg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="icon"
+                    ><img
+                      src="./../assets/images/icons/icon-twitter.svg"
+                      alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <div class="team-member">
+              <img
+                src="./../assets/images/about/desktop/avatar-thompson.jpg"
+                alt=""
+                class="team-member__avatar"
+              />
+
+              <div>
+                <div>
+                  <h3 class="team-member__name">Thompson Smith</h3>
+                  <p class="team-member__role">Head of Finance</p>
+                </div>
+                <div class="icons">
+                  <span class="icon">
+                    <img
+                      src="./../assets/images/icons/icon-linkedin.svg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="icon"
+                    ><img
+                      src="./../assets/images/icons/icon-twitter.svg"
+                      alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <div class="team-member">
+              <img
+                src="./../assets/images/about/desktop/avatar-jackson.jpg"
+                alt=""
+                class="team-member__avatar"
+              />
+              <div>
+                <div>
+                  <h3 class="team-member__name">Jackson Rourke</h3>
+                  <p class="team-member__role">Lead Designer</p>
+                </div>
+                <div class="icons">
+                  <span class="icon">
+                    <img
+                      src="./../assets/images/icons/icon-linkedin.svg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="icon"
+                    ><img
+                      src="./../assets/images/icons/icon-twitter.svg"
+                      alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+            <div class="team-member">
+              <img
+                src="./../assets/images/about/desktop/avatar-maria.jpg"
+                alt=""
+                class="team-member__avatar"
+              />
+              <div>
+                <div>
+                  <h3 class="team-member__name">Maria Simpson</h3>
+                  <p class="team-member__role">Senior Architect</p>
+                </div>
+                <div class="icons">
+                  <span class="icon">
+                    <img
+                      src="./../assets/images/icons/icon-linkedin.svg"
+                      alt=""
+                    />
+                  </span>
+                  <span class="icon"
+                    ><img
+                      src="./../assets/images/icons/icon-twitter.svg"
+                      alt=""
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- </main> -->
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <nav class="footer__nav">
+          <a href="./../" class="footer__logo">
+            <img src="./../assets/images/logo-white.svg" alt="" />
+          </a>
+
+          <ul class="nav__list">
+            <li>
+              <a href="./../portfolio/" class="nav__link">portfolio</a>
+            </li>
+            <li>
+              <a href="./../about/" class="nav__link">about Us</a>
+            </li>
+            <li>
+              <a href="./../contact/" class="nav__link">contact</a>
+            </li>
+          </ul>
+
+          <a href="./../portfolio/" class="btn">
+            <span class="text">See Our Portfolio</span>
+            <span class="icn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20">
+                <g
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke="#EEEFF4"
+                  stroke-width="2"
+                >
+                  <path d="M15 1l9 9-9 9M0 10h24" />
+                </g>
+              </svg>
+            </span>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./../assets/scripts/app.js"></script>
+  </body>
+</html>

@@ -15,7 +15,7 @@
   --dark-blue: hsl(223, 47%, 23%);
 
   --radius-md: 1rem;
-  --radius-lg: 1.5rem;
+  --radius-lg: 2rem;
 }
 
 html,
@@ -38,14 +38,14 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center top;
-  background-image: url('./../images/pattern-background-mobile.svg');
+  background-image: url('./images/pattern-background-mobile.svg');
   padding: 4rem 2rem;
   display: grid;
   place-items: center;
 }
 @media (min-width: 550px) {
   body {
-    background-image: url('./../images/pattern-background-desktop.svg');
+    background-image: url('./images/pattern-background-desktop.svg');
   }
 }
 
@@ -129,7 +129,6 @@ section {
   background-color: var(--very-pale-blue);
   border-radius: var(--radius-md);
   text-align: initial;
-  margin-block-end: 1rem;
 }
 
 section .txt {
@@ -142,6 +141,7 @@ section h2 {
 }
 
 .btn {
+  font-size: 1.2rem;
   padding: 1.25rem;
   border: none;
   background-color: transparent;

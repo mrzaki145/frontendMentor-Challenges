@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* (paragraphs) */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  background-color: var(--very-light-gray);
+  padding: 9rem 2.25rem;
+  display: grid;
+  place-items: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.grid {
+  width: min(100%, 45rem);
+  border-radius: 8px;
+  overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .grid {
+    width: min(100%, 92rem);
+    min-height: 50rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+.card {
+  display: grid;
+  justify-items: start;
+  align-content: space-between;
+  min-height: 100%;
+  padding-block: 4.75rem;
+  padding-inline: 4.9rem;
+  background-color: var(--card-clr);
+}
+.card--sedans {
+  --card-clr: var(--bright-orange);
+}
+.card--suvs {
+  --card-clr: var(--dark-cyan);
+}
+.card--luxury {
+  --card-clr: var(--very-dark-cyan);
+}
+
+/* .card__icn {
+  margin-block-end: 3rem;
+} */
+
+.card__title {
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-size: 3.8rem;
+  font-weight: 700;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  margin-block: 3.9rem 3rem;
+}
+
+.card__description {
+  max-width: 37ch;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--card-clr);
+  background: #fff;
+  padding: 0.8rem 3rem;
+  border: 2px solid #fff;
+  border-radius: 25rem;
+  margin-block-start: 2.5rem;
+  transition: 0.25s ease;
+  transition-property: color, background-color;
+}
+.btn:hover,
+.btn:focus {
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+.btn:focus-visible {
+  border-style: dotted;
+}

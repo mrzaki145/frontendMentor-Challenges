@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mostafa Reda" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lexend+Deca:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <div class="card__img">
+        <picture>
+          <source
+            srcset="./images/image-header-mobile.jpg"
+            media="(max-width: 1023px)"
+          />
+          <source
+            srcset="./images/image-header-desktop.jpg"
+            media="(min-width: 1024px)"
+          />
+
+          <img src="./images/image-header-mobile.jpg" alt="" />
+        </picture>
+      </div>
+
+      <div class="card__content">
+        <header>
+          <h1>
+            Get <span class="mark">insights</span> that help your business grow.
+          </h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+        </header>
+        <section>
+          <ul class="features">
+            <li class="feature">
+              <h2>10k+</h2>
+              <p>companies</p>
+            </li>
+            <li class="feature">
+              <h2>314</h2>
+              <p>templates</p>
+            </li>
+            <li class="feature">
+              <h2>12M+</h2>
+              <p>queries</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
